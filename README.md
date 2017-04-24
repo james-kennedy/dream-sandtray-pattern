@@ -51,7 +51,8 @@ REQUIRED: Qt SDK 4.8.5 (recommended Qt Creator 3.0.1)
 7. To get the most out of the game with a robot (and make it work in some cases), image libraries should be formatted as follows:
    - Top level folder - as specified in settings.ini (default is 'libraries' one directory above the executable)
      - Libraries: in separate folders, named, e.g. lib1_food, lib2_aliens, lib3_prime_numbers- they will be shown in alphabetical order; properties can be sent to the robot and are split by underscores, starting at the second position
-   - Categories: naming convention catX_first_second (e.g. catA_low, catB_high), where X is a letter representing the unique id for that category and first_second are properties separated by underscores - these can be sent to the robot
+   - Fixed elements: naming convention SENXFIL_desc, where X is a number representing the order and 'desc' describes the image.
+   - Categories: naming convention SENXBLA_Y_blank, where X is a number representing the order, and Y is a letter representing the unique id for that category.
    - Images: naming convention X123_first_second (e.g. A001_yellow_banana, B002_red_apple), where X is the category unique ID and 123 is a unique identifier for the image (this is unused by the game, so isn't strictly necessary, but keeps from naming clashes)
      Only images in .png or .jpg format will be read in. .png are preferred as they contain transparency; .jpg will look poor.
      Do not put any non-library folders in the top-level libraries folder.
